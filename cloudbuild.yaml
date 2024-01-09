@@ -194,5 +194,5 @@ substitutions:
 logsBucket: '${_LOGS_BUCKET}'
 options:
   sourceProvenanceHash: ['SHA256']
-  machineType: 'e2-medium'
+  machineType: 'E2-MEDIUM'
 timeout: 2500s
