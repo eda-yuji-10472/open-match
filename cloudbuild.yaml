@@ -188,9 +188,9 @@ substitutions:
     _OM_VERSION: "1.8.1"
     _GCB_POST_SUBMIT: "0"
     _GCB_LATEST_VERSION: "undefined"
-    _ARTIFACTS_BUCKET: "gs://open-match-build-artifacts/"
-    _LOGS_BUCKET: "gs://open-match-build-logs/"
-    _CHARTS_BUCKET: "gs://open-match-chart"
+    _ARTIFACTS_BUCKET: "gs://open-match-build-artifacts-striped-proxy-187410/"
+    _LOGS_BUCKET: "gs://open-match-build-logs-striped-proxy-187410/"
+    _CHARTS_BUCKET: "gs://open-match-chart-striped-proxy-187410/"
 logsBucket: '${_LOGS_BUCKET}'
 options:
   sourceProvenanceHash: ['SHA256']
