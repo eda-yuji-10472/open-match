@@ -195,5 +195,5 @@ logsBucket: '${_LOGS_BUCKET}'
 options:
   sourceProvenanceHash: ['SHA256']
   #test
-  machineType: 'E2_HIGHCPU_32'
+  machineType: 'E2_MEDIUM'
 timeout: 2500s
