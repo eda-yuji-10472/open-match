@@ -196,4 +196,4 @@ options:
   sourceProvenanceHash: ['SHA256']
   #test
   machineType: 'E2_MEDIUM'
-timeout: 2500s
+timeout: 5000s
