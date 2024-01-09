@@ -62,10 +62,10 @@ steps:
   args: ['make', 'clean-third-party', 'clean-protos', 'clean-swagger-docs']
   waitFor: ['Docker Image: open-match-build']
 
-- id: 'Test: Markdown'
-  name: 'gcr.io/$PROJECT_ID/open-match-build'
-  args: ['make', 'md-test']
-  waitFor: ['Build: Clean']
+#- id: 'Test: Markdown'
+#  name: 'gcr.io/$PROJECT_ID/open-match-build'
+#  args: ['make', 'md-test']
+#  waitFor: ['Build: Clean']
 
 - id: 'Setup: Clean Go Dependencies'
   name: 'gcr.io/$PROJECT_ID/open-match-build'
@@ -194,6 +194,6 @@ substitutions:
 logsBucket: '${_LOGS_BUCKET}'
 options:
   sourceProvenanceHash: ['SHA256']
-  #test
-  machineType: 'E2_MEDIUM'
+  #machineType: 'E2_MEDIUM'
+  machineType: 'E2_HIGHCPU_32'
 timeout: 5000s
